@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: roboto;
+}
+
+body {
+	/* position: fixed; */
+	/* inset: 0; */
+	z-index: -1;
+
+  	background-color: rgb(0, 12, 21);
+	background: url(https://images.wallpaperscraft.com/image/single/polygon_gradient_texture_134428_3840x2400.jpg);
+	background-size: cover;
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+
+td {
+	background-color: rgba(35, 0, 6, 0.507);
+}
+
+th {
+	background-color: rgba(35, 0, 6, 0.945);
+	color:rgb(147, 161, 172)
+}
+
+tfoot td {
+    background-color: rgba(35, 0, 6, 0.839);
+}
+tfoot td:hover {
+    background-color: rgba(128, 3, 24, 0.839);
+}
+
+.errorPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+  }

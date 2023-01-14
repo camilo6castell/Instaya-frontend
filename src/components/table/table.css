@@ -1,0 +1,90 @@
+table {
+    border-collapse: collapse;
+    margin: 5% auto;
+    width: 50%;
+}
+
+
+
+caption,
+label {
+    color: white;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.5rem;
+}
+
+th {
+    background: gray;
+}
+
+label {
+    display: block;
+    width: fit-content;
+    margin: 0rem;
+}
+
+/* input,
+select {
+    width: 100%;
+
+} */
+
+
+/* columnas */
+
+.tstate {
+    width: 5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.47);
+    color: rgb(255, 255, 255);
+    border-radius: 2rem;
+}
+
+.tplace {
+    width: 6rem;
+}
+
+.tmeasures {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.tdmeasure {
+    display: flex;
+}
+.tdmeasure1 {
+    display: inline;
+}
+
+.tdmeasure2 {
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.delicate {
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+.sender {
+    display: inline;
+    align-items: center;
+}
+.senderinput {
+    width: 10rem;
+    margin-right: 1rem;
+}
+.senderblock {
+    display: flex;
+    margin: 0.5rem;
+    justify-content: space-between;   
+}
+
