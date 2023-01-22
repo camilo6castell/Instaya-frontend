@@ -3,8 +3,6 @@ import { Form, useNavigate } from "react-router-dom";
 
 import bcrypt from 'bcryptjs'
 
-
-
 // import './registerform.css'
 
 
