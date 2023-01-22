@@ -19,6 +19,13 @@ Developed as an exercise as part of the "MisiónTIC" program of the Colombian go
 4. Parcel tracking through unique code generation.
 5. Possibility of editing shipments and changing order parameters.
 
+## Live application
+
+My application deployed is in the link shown below
+
+[Vercel](https://instaya-frontend-beige.vercel.app/)
+
+
 ## Document
 
 The formal document (in spanish) for this project is shown below
