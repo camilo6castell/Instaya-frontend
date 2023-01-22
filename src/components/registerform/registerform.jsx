@@ -7,7 +7,6 @@ import bcrypt from 'bcryptjs'
 
 // import './registerform.css'
 
-const hostp = "http://localhost:5000"
 
 // SEGURIDAD DEL CREDENCIALES
 
@@ -36,7 +35,7 @@ const RegisterForm = () => {
     const cUser = () => {
         const hashedPassword = bcrypt.hashSync(form.password, salt)
         form.password = hashedPassword
-        fetch(`${hostp}/api/users/`, {
+        fetch(`${import.meta.env.VITE_BACK_HOST}/api/users/`, {
             method: 'POST',
             body: JSON.stringify(form),
             headers: {

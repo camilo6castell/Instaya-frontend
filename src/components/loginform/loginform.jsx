@@ -3,11 +3,7 @@ import { Form, Link, useNavigate } from 'react-router-dom'
 
 import CryptoJS from "react-native-crypto-js";
 
-
-
 import './loginform.css'
-
-const hostp = "http://localhost:5000"
 
 const initialForm = {
     cc: "",
@@ -29,7 +25,7 @@ const LoginForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch(`${hostp}/api/users/${form.cc}`, {
+        fetch(`${import.meta.env.VITE_BACK_HOST}/api/users/${form.cc}`, {
             method: 'POST',
             body: JSON.stringify(form),
             headers: {

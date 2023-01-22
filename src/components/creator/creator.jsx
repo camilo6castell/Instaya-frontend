@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 
-const hostp = "http://localhost:5000"
-
-
 // import { useForm } from '../hooks/useForm'
 
 const Creator = ({ data, refreshParcels }) => {
     let initialForm = data
     const [form, setForm] = useState(initialForm)
     const [modificar, setModificar] = useState(false)
-
 
     // FORM 
 
@@ -25,7 +21,7 @@ const Creator = ({ data, refreshParcels }) => {
         //ACTUALIZAR
 
     const uData = () => {
-        fetch(`${hostp}/api/parcels/`, {
+        fetch(`${import.meta.env.VITE_BACK_HOST}/api/parcels/`, {
             method: 'PUT',
             body: JSON.stringify(form),
             headers: {
@@ -44,7 +40,7 @@ const Creator = ({ data, refreshParcels }) => {
 
     const cData = () => {
         form.state = "cancelado"
-        fetch(`${hostp}/api/parcels/`, {
+        fetch(`${import.meta.env.VITE_BACK_HOST}/api/parcels/`, {
             method: 'PUT',
             body: JSON.stringify(form),
             headers: {
@@ -65,7 +61,7 @@ const Creator = ({ data, refreshParcels }) => {
 
     const dData = () => {        
         if (confirm(`¿Eliminar registro del paquete con codigo de seguimiento ${form.tracking}?`)) {
-            fetch(`${hostp}/api/parcels/${form._id}`, {
+            fetch(`${import.meta.env.VITE_BACK_HOST}/api/parcels/${form._id}`, {
                 method: 'DELETE',
                 headers: {
                     Accept: "application/json",

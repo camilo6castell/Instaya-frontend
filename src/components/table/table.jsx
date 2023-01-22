@@ -8,8 +8,6 @@ import { useOutletContext } from 'react-router-dom'
 // import { useForm } from './hooks/useForm'
 import './table.css'
 
-const hostp = "http://localhost:5000"
-
 const initialForm = {
     cc: "",
     state: "guardado",
@@ -51,7 +49,7 @@ const Table = () => {
     function refreshParcels(){
     // conectar session
         const session = localStorage.getItem('accessToken')
-        fetch(`${hostp}/api/parcels/${session}`)
+        fetch(`${import.meta.env.VITE_BACK_HOST}/api/parcels/${session}`)
         .then(res => res.json())
         .then(data => {
             console.log("componente montado")
@@ -88,7 +86,7 @@ const Table = () => {
     const crData = () => {
         const session = localStorage.getItem('accessToken')
         form.tracking = makeTC(5)
-        fetch(`${hostp}/api/parcels/${session}`, {
+        fetch(`${import.meta.env.VITE_BACK_HOST}/api/parcels/${session}`, {
             method: 'POST',
             body: JSON.stringify(form),
             headers: {
