@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Link, useNavigate } from 'react-router-dom'
 
-import CryptoJS from "react-native-crypto-js";
-
 import './loginform.css'
 
 const initialForm = {
@@ -16,6 +14,7 @@ const LoginForm = () => {
     const [form, setForm] = useState(initialForm)
 
     const handleInput = (e) => {
+        console.log(`${e.target.value}  -  ${e.target.checked}` )
         if (e.target.value != "on") {
             setForm({...form, [e.target.name]:e.target.value})
         } else {

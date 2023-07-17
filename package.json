@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "crypto-js": "^4.1.1",
     "dotenv": "^16.0.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
