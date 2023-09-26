@@ -14,7 +14,6 @@ const LoginForm = () => {
     const [form, setForm] = useState(initialForm)
 
     const handleInput = (e) => {
-        console.log(`${e.target.value}  -  ${e.target.checked}` )
         if (e.target.value != "on") {
             setForm({...form, [e.target.name]:e.target.value})
         } else {
@@ -32,15 +31,16 @@ const LoginForm = () => {
                 'Content-Type': 'application/json'
             }
         })
-        .then(res => res.json()
+        .then(res => res.json())
         .then(data => {
-            if (data.statusCode == 404) {
-                alert(data.status)
+            if (data.message){
+                alert(data.message)
             } else {
+                console.log(data.session)
                 localStorage.setItem('accessToken', data.session)
                 navigate('/envios')
-            }            
-        }))
+            }
+        })
     }
     
     return (

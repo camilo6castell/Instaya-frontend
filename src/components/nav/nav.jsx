@@ -10,7 +10,6 @@ const Nav = () => {
     let [user, setUser] = useState(false)
 
     useEffect(() => {
-      console.log(user)
       if (localStorage.getItem('accessToken')){
         setUser(true)
       } else {

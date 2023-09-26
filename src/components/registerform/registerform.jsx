@@ -24,6 +24,7 @@ const RegisterForm = () => {
 
     const handleInput = (e) => {
         if (e.target.value != "on") {
+            console.log(e.target.value)
             setForm({...form, [e.target.name]:e.target.value})
         } else {
             setForm({...form, [e.target.name]:e.target.checked})
@@ -41,7 +42,7 @@ const RegisterForm = () => {
                 "Content-type": "application/json"
             }
         })
-        .then(res => res.json())
+        .then(res => crypres.json())
         .then(data => {
             if (data.statusCode === 200){
                 alert("usuario creado, ahora puedes iniciar sesión")
