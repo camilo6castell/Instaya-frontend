@@ -1,21 +1,26 @@
-import Nav from './components/nav/nav'
+import styled from "styled-components";
 
-// import LoginForm from './components/loginform/loginform'
-// import RegisterForm from './components/registerform/registerform'
-import { Table } from './components/table/table'
-
-import './App.css'
-
-function App() {
-  return (
-    <>
-      <Nav />
-      {/* <LoginForm />  */}
-      {/* <RegisterForm /> */}
-      <Table/>
-
-      </>
-  )
+export default function App({ children }) {
+  return <AppStyled>{children}</AppStyled>;
 }
 
-export default App
+const AppStyled = styled.div`
+  && {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+    background: url(https://images.wallpaperscraft.com/image/single/polygon_gradient_texture_134428_3840x2400.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+`;
