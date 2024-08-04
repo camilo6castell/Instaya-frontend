@@ -24,6 +24,43 @@ Developed as an exercise as part of the _"MisiónTIC"_ program by the Colombian 
 5. Parcel tracking through unique code generation.
 6. Possibility of editing shipments and changing order parameters.
 
+## Installation
+
+To install and run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/instaya-frontend.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd instaya-frontend
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+After starting the development server, you can access the application at `http://localhost:3000` in your web browser. You can use the following credentials to log in:
+
+### Test Credentials
+
+**Regular User**
+
+- Email: `user@example.com`
+- Password: `password123`
+
+**Admin**
+
+- Email: `admin@example.com`
+- Password: `adminpassword`
+
 ## Live Application
 
 The application is deployed and can be accessed via the following link:
@@ -36,6 +73,6 @@ The formal project documentation (in Spanish) can be accessed via the following 
 
 [Google Drive](https://drive.google.com/file/d/1v7anSEonx4DkO3JBXeIhxUjEv6Eu6TLY/view?usp=sharing)
 
-### Contact
+## Contact
 
-[LinkedIn](https://www.linkedin.com/in/camilocastell/)
+For any inquiries or feedback, you can reach me via [LinkedIn](https://www.linkedin.com/in/camilocastell/).
